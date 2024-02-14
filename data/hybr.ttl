@@ -1,97 +1,97 @@
-@prefix : <http://schema.org/>
+@prefix : <https://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 :Border
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Border"@en ;
   rdfs:subClassOf :Intangible .
 
 :Intangible
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Intangible"@en ;
   rdfs:subClassOf :Thing .
 
 :Borough
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Borough"@en ;
   rdfs:subClassOf :Place .
 
 :Place
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Place"@en ;
   rdfs:subClassOf :Thing .
 
 :Building
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Building"@en ;
   rdfs:subClassOf :Place, :PointOfInterest .
 
 :PointOfInterest
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Point Of Interest"@en ;
   rdfs:subClassOf :Place .
 
 :Centroid
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Centroid"@en ;
   rdfs:subClassOf :Location .
 
 :Location
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Location"@en ;
   rdfs:subClassOf :Intangible .
 
 :City
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "City"@en ;
   rdfs:subClassOf :Place .
 
 :Coordinates
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Coordinates"@en ;
   rdfs:subClassOf :Location .
 
 :Country
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Country"@en ;
   rdfs:subClassOf :Place .
 
 :Thing
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Thing"@en .
 
 :Monument
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Monument"@en ;
   rdfs:subClassOf :PointOfInterest .
 
 :Organization
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Organization"@en ;
   rdfs:subClassOf :Thing .
 
 :Person
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Person"@en ;
   rdfs:subClassOf :Thing .
 
 :PostalAdress
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "PostalAdress"@en ;
   rdfs:subClassOf :Location .
 
 :Region
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "Region"@en ;
   rdfs:subClassOf :Place .
 
 :State
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "State"@en ;
   rdfs:subClassOf :Place .
 
 :University
-  a owl:Class ;
+  a rdfs:Class ;
   rdfs:label "University"@en ;
   rdfs:subClassOf :Building, :Organization .

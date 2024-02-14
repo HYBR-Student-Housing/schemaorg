@@ -54,7 +54,7 @@ class SdoTermSource():
     MARKDOWNPROCESS=True
     
     def __init__(self,uri,ttype=None,label='',layer=None):
-        #log.info('%s %s "%s" %s %s' % (uri,ttype,label, layer))
+        log.info('%s %s "%s" %s ' % (uri,ttype,label, layer))
         global DATATYPEURI, ENUMERATIONURI
         uri = str(uri)
         self.uri = uri

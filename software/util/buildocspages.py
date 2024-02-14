@@ -210,7 +210,7 @@ def fullPage(page):
     if not listings:
         listings = []
         listings.append(listingNode("Thing",title="Types:"))
-        listings.append(listingNode("DataType",title="DataTypes:"))
+        # listings.append(listingNode("DataType",title="DataTypes:"))
     extra_vars = {
         'home_page': "False",
         'title': SITENAME,
